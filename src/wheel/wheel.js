@@ -4,7 +4,7 @@
 	__timeoutTop: null,
 
 	// duration to prevent scrolling in ms
-	__preventDuration: 1000,
+	__preventDuration: 500,
 
 	_preventTopScroll: function (e, isPrevented) {
 		if (!isPrevented) {
@@ -134,7 +134,7 @@
 		} else if ( newY < this.maxScrollY ) {
 			newY = this.maxScrollY;
 		}
-		
+
 		this.scrollTo(newX, newY, 0);
 
 		if(this.options.enable_ofscroll)
